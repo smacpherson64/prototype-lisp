@@ -1,0 +1,22 @@
+{
+  "lock": false,
+  "tasks": {
+    "dev:tw": "tw --output ./public/assets/main.css --watch",
+    "dev:js": "esbuild public/assets/js/main.tsx --bundle --outdir=public/assets/js --external:react --external:react-dom --format=esm --watch",
+    "dev:repl": "echo 'deno repl --eval-file=main.ts --unstable --allow-read --allow-net --allow-env --allow-write --allow-ffi'",
+    // Scripts
+    "dev": "deno task dev:tw & deno task dev:js"
+  },
+  "imports": {
+    "std/": "https://deno.land/std/",
+    "ramda": "https://raw.githubusercontent.com/ramda/ramda/master/source/index.js",
+    "ramda/": "https://raw.githubusercontent.com/ramda/ramda/master/source/",
+    "webview": "https://raw.githubusercontent.com/webview/webview_deno/main/mod.ts",
+    "webview/": "https://raw.githubusercontent.com/webview/webview_deno/main/",
+    "date-fns": "https://raw.githubusercontent.com/smacpherson64/date-fns-deno/main/index.js"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  }
+}
