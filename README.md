@@ -1,3 +1,11 @@
-# Experiement
+# Lisp Experiment
 
-Playing with deno and various concepts. This builds a lisp like language using Ramda and part of DateFNS.
+I have been playing around with various concepts in Deno and this is an experiment with learning it better.
+
+The actual output is a lisp (like) language that uses Ramda and part of DateFNS.
+
+## To run
+
+```
+deno test
+```

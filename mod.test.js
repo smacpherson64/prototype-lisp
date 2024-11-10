@@ -127,7 +127,7 @@ Deno.test("dates", () => {
   assertEquals(result, expectedResult);
 });
 
-Deno.test("array", () => {
+Deno.test("handles arrays as state", () => {
   const actions = [
     ["$assoc", 0, "hi!"],
     ["$modify", 0, ["$toUpper"]],
