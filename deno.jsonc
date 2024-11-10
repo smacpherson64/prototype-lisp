@@ -1,5 +1,4 @@
 {
-  "lock": false,
   "imports": {
     "@std/assert": "jsr:@std/assert@^1.0.7",
     "date-fns": "npm:date-fns@^4.1.0",
