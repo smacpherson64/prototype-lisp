@@ -126,3 +126,16 @@ Deno.test("dates", () => {
 
   assertEquals(result, expectedResult);
 });
+
+Deno.test("array", () => {
+  const actions = [
+    ["$assoc", 0, "hi!"],
+    ["$modify", 0, ["$toUpper"]],
+    ["$assoc", 1, "toaster"],
+  ];
+  const state = [];
+  const result = actions.reduce(reducer, state);
+  const expectedResult = ["HI!", "toaster"];
+
+  assertEquals(result, expectedResult);
+});
