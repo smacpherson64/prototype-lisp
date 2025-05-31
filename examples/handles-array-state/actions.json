@@ -1,0 +1,5 @@
+[
+  ["$assoc", 0, "hi!"],
+  ["$modify", 0, ["$toUpper"]],
+  ["$assoc", 1, "toaster"]
+]

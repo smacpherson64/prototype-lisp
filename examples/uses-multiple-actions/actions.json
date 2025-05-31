@@ -1,0 +1,5 @@
+[
+  ["$assoc", "y", 5],
+  ["$assocPath", ["a", "b", "c"], 5],
+  ["$over", ["$lensPath", ["a", "b", "c"]], "$inc"]
+]

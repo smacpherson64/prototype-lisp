@@ -25,8 +25,6 @@ const dates = {
 
 const actions = { ...R, ...dates };
 
-export const defaultState = {};
-
 function isAction($action) {
   if (typeof $action !== "string") {
     return false;
